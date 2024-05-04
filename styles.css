@@ -87,11 +87,13 @@ body {
 }
 
 .size9 {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
+  font-size: 1rem;
 }
 
 .size8 {
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
+  font-size: 1rem;
 }
 
 .bold {
