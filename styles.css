@@ -162,6 +162,12 @@ tr:first-child {
   text-align: center;
 }
 
+#tableCoDongLonId > tbody > tr > th:first-child,
+#tableCoDongLonId > tbody > tr > td:first-child {
+  width: 10px;
+  text-align: center;
+}
+
 tr:first-child > th {
   border-top: 1px solid #00b0f0;
 }
