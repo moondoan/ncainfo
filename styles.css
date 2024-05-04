@@ -34,7 +34,7 @@ body {
   display: flex;
   justify-content: center;
   justify-items: center;
-  background: #FFFAEE;
+  background: #fff;
 }
 
 .content-group > * {
