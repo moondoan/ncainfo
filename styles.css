@@ -11,11 +11,10 @@ body {
   display: flex;
   justify-content: center;
   justify-items: center;
-  /* background-color: #f5f5f5; */
   background-color: #fff;
 }
 
-.chartContainer > * {
+.chartContainer>* {
   flex: 1;
   flex-direction: column;
   display: flex;
@@ -28,7 +27,7 @@ body {
   flex-wrap: wrap;
 }
 
-.content > * {
+.content>* {
   margin: 5px;
   flex: 1;
   display: flex;
@@ -37,7 +36,7 @@ body {
   background: #fff;
 }
 
-.content-group > * {
+.content-group>* {
   flex: 1;
 }
 
@@ -57,14 +56,14 @@ body {
   flex-wrap: wrap;
 }
 
-.conFlex > * {
+.conFlex>* {
   flex: 1;
-  background: #FFFAEE;
-  margin: 5px;
+  /* background: #FFFAEE; */
+  /* margin: 5px; */
   padding: 10px;
 }
 
-.content > div:nth-child(2) {
+.content>div:nth-child(2) {
   display: table !important;
 }
 
@@ -92,13 +91,11 @@ body {
 }
 
 .size9 {
-  /* font-size: 0.9rem; */
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .size8 {
-  /* font-size: 0.8rem; */
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 .bold {
@@ -115,18 +112,17 @@ table {
   color: #373d3f;
   font-size: 14px;
   font-weight: 400;
-  /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 tr {
   text-align: left;
-  border: 1px solid #00b0f0;
+  border: 1px solid #00B0F0;
 }
 
 th,
 td {
   padding: 10px;
-  border: 1px solid #00b0f0;
+  border: 1px solid #00B0F0;
   border-left: none;
   border-top: none;
 }
@@ -141,35 +137,36 @@ tr:nth-child(even) {
 
 th:first-child,
 td:first-child {
-  border-left: 1px solid #00b0f0;
+  border-left: 1px solid #00B0F0;
 }
 
 tr:first-child {
   max-height: 30px !important;
   background: #287728;
-  color: #f2f2f2;
+  color: #F2F2F2;
 }
 
 #tableCoDongLonId tr:last-child {
   background: #287728;
-  color: #f2f2f2;
+  color: #F2F2F2;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-#tableBanLanhDaoId > tbody > tr > th:first-child,
-#tableBanLanhDaoId > tbody > tr > td:first-child {
+#tableBanLanhDaoId>tbody>tr>th:first-child,
+#tableBanLanhDaoId>tbody>tr>td:first-child {
   width: 10px;
   text-align: center;
 }
 
 #tableCoDongLonId > tbody > tr > th:first-child,
 #tableCoDongLonId > tbody > tr > td:first-child {
-  width: 10px;
-  text-align: center;
+width: 10px;
+text-align: center;
 }
 
-tr:first-child > th {
-  border-top: 1px solid #00b0f0;
+tr:first-child>th {
+  border-top: 1px solid #00B0F0;
 }
 
 .flexCenter {
@@ -184,7 +181,7 @@ tr:first-child > th {
   flex-direction: column;
 }
 
-.rateContainer > span {
+.rateContainer>span {
   flex: 1;
   align-self: flex-end;
 }
@@ -197,26 +194,24 @@ tr:first-child > th {
   background: #287728;
   color: #f2f2f2;
   font-size: 16px;
-  /* background: radial-gradient(circle, #f2f2f2 0%, #d5c3c3 100%);  */
-  /* background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); */
 }
 
 .minus {
-  color: #fa0011;
+  color: #FA0011;
   border-radius: 4px;
   padding: 2px 10px;
   position: relative;
 }
 
 .minus::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -1px;
   margin-top: -5px;
   border-width: 4px 0 4px 8px;
   border-style: solid;
-  border-color: transparent transparent transparent #fa0011;
+  border-color: transparent transparent transparent #FA0011;
   transform: rotate(90deg);
 }
 
@@ -228,7 +223,7 @@ tr:first-child > th {
 }
 
 .plus::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -1px;
@@ -246,6 +241,40 @@ tr:first-child > th {
   position: relative;
 }
 
-.tbl-r > table > tbody > tr > td:nth-child(n + 2) {
+.tbl-r>table>tbody>tr>td:nth-child(n+2) {
   text-align: right;
+}
+
+#tableCoDongLonId > tbody > tr > th:nth-child(n+3),
+#tableCoDongLonId > tbody > tr > td:nth-child(n+3),
+#tableBanLanhDaoId > tbody > tr > th:nth-child(n+4),
+#tableBanLanhDaoId > tbody > tr > td:nth-child(n+4) {
+  text-align: right;
+}
+
+#tableCoDongLonId > tbody > tr > th:nth-child(5),
+#tableCoDongLonId > tbody > tr > td:nth-child(5),
+#tableBanLanhDaoId > tbody > tr > th:nth-child(6),
+#tableBanLanhDaoId > tbody > tr > td:nth-child(6) {
+  text-align: center;
+}
+
+#doanhThuId > tbody > tr > th:nth-child(n+2),
+#doanhThuId > tbody > tr > td:nth-child(n+2),
+#loiNhuanId > tbody > tr > th:nth-child(n+2),
+#loiNhuanId > tbody > tr > td:nth-child(n+2) {
+  text-align: right;
+}
+
+#doanhThuId > tbody > tr > td:first-child,
+#loiNhuanId > tbody > tr > td:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.border-chart {
+  border: 1px solid #00B0F0;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
 }
