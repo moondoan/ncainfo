@@ -1,0 +1,227 @@
+.chartContainer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #f5f5f5;
+}
+
+.chartContainer > * {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content > * {
+  margin: 5px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background: #d5def1;
+}
+
+.content-group > * {
+  flex: 1;
+}
+
+.contentTitle {
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 4px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.conFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conFlex > * {
+  flex: 1;
+  background: #d5def1;
+  margin: 5px;
+  padding: 10px;
+}
+
+.content > div:nth-child(2) {
+  display: table !important;
+}
+
+.conFlex span {
+  font-weight: bold;
+}
+
+#chartContent {
+  position: relative;
+}
+
+.logoChart {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: center center;
+  background-size: 128px auto;
+  opacity: 0.05;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.size9 {
+  font-size: 0.9rem;
+}
+
+.size8 {
+  font-size: 0.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nom {
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  color: #373d3f;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+tr {
+  text-align: left;
+  border: 1px solid #00b0f0;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #00b0f0;
+  border-left: none;
+  border-top: none;
+}
+
+tr:nth-child(odd) {
+  background: radial-gradient(circle, #f2f2f2 0%, #d5c3c3 100%);
+}
+
+th:first-child,
+td:first-child {
+  border-left: 1px solid #00b0f0;
+}
+
+tr:first-child {
+  max-height: 30px !important;
+  background: #287728;
+  color: #f2f2f2;
+}
+
+#tableCoDongLonId tr:last-child {
+  background: #287728;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+#tableBanLanhDaoId > tbody > tr > th:first-child,
+#tableBanLanhDaoId > tbody > tr > td:first-child {
+  width: 10px;
+  text-align: center;
+}
+
+tr:first-child > th {
+  border-top: 1px solid #00b0f0;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px !important;
+}
+
+.rateContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.rateContainer > span {
+  flex: 1;
+  align-self: flex-end;
+}
+
+.rateCompare {
+  font-size: 0.85em;
+}
+
+.bg-title {
+  background: #d5c3c3;
+  /* background: radial-gradient(circle, #f2f2f2 0%, #d5c3c3 100%);  */
+  /* background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); */
+}
+
+.minus {
+  color: #fa0011;
+  border-radius: 4px;
+  padding: 2px 10px;
+  position: relative;
+}
+
+.minus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  margin-top: -5px;
+  border-width: 4px 0 4px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fa0011;
+  transform: rotate(90deg);
+}
+
+.plus {
+  color: #287728;
+  border-radius: 4px;
+  padding: 2px 10px;
+  position: relative;
+}
+
+.plus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  margin-top: -5px;
+  border-width: 4px 0 4px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #287728;
+  transform: rotate(-90deg);
+}
+
+.neutral {
+  color: green;
+  border-radius: 4px;
+  padding: 2px 4px;
+  position: relative;
+}
+
+.tbl-r > table > tbody > tr > td:nth-child(n + 2) {
+  text-align: right;
+}
