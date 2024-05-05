@@ -58,8 +58,8 @@ body {
 
 .conFlex>* {
   flex: 1;
-  /* background: #FFFAEE; */
-  /* margin: 5px; */
+  background: #FFFAEE;
+  margin: 5px;
   padding: 10px;
 }
 
